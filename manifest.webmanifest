@@ -1,0 +1,17 @@
+{
+  "name": "SMART LIBRARY",
+  "short_name": "SMART LIBRARY",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f5fb",
+  "theme_color": "#08183e",
+  "description": "Library Management Platform",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08183e">
+  <meta name="description" content="SMART LIBRARY — Library Management Platform">
+  <title>SMART LIBRARY | Secure Login</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="mark">SL</div>
+      <div><div class="brand-name">SMART <span>LIBRARY</span></div><div class="brand-sub">LIBRARY MANAGEMENT PLATFORM</div></div>
+    </div>
+    <div class="top-right"><span class="status-dot"></span> SECURE PORTAL <span class="lang">ENGLISH⌄</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">ONE PLATFORM. COMPLETE CONTROL.</div>
+      <h1>Manage your library.<br><span>Move smarter.</span></h1>
+      <p>Admissions, seats, shifts, fees and student records — organized in one simple platform.</p>
+      <div class="feature-row">
+        <div class="feature"><b>▣</b> Seat Management</div>
+        <div class="feature"><b>♙</b> Student Records</div>
+        <div class="feature"><b>▥</b> Fees & Reports</div>
+      </div>
+    </section>
+
+    <section class="login-card" aria-labelledby="welcome">
+      <div class="card-heading">
+        <div class="mini-mark">SL</div>
+        <div><div class="card-brand">SMART LIBRARY</div><div class="card-sub">MANAGEMENT PLATFORM</div></div>
+      </div>
+      <div class="welcome">
+        <div class="eyebrow dark">WELCOME BACK</div>
+        <h2 id="welcome">Sign in to your account</h2>
+        <p>Choose your account type and continue securely.</p>
+      </div>
+
+      <label class="section-label">SELECT YOUR ACCOUNT TYPE</label>
+      <div class="roles" role="group" aria-label="Account type">
+        <button class="role selected" data-role="Student" type="button"><span class="role-icon">🎓</span><strong>Student</strong><small>Student portal</small></button>
+        <button class="role" data-role="Library Owner" type="button"><span class="role-icon">▦</span><strong>Library Owner</strong><small>Manage library</small></button>
+        <button class="role" data-role="Super Admin" type="button"><span class="role-icon">♛</span><strong>Super Admin</strong><small>Platform control</small></button>
+      </div>
+
+      <form id="phone-form">
+        <label class="section-label" for="phone">MOBILE NUMBER</label>
+        <div class="phone-field"><span class="country">🇮🇳 +91</span><input id="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="Enter 10-digit mobile number" required></div>
+        <button class="primary" type="submit">Continue with OTP <span>→</span></button>
+        <p class="message" id="phone-message" aria-live="polite"></p>
+      </form>
+
+      <form id="otp-form" class="hidden">
+        <button class="back" id="back" type="button">← Back</button>
+        <label class="section-label" for="otp">ENTER VERIFICATION CODE</label>
+        <p class="otp-intro">Enter the 6-digit code sent to <strong id="masked-number"></strong>.</p>
+        <input class="otp-input" id="otp" type="text" inputmode="numeric" maxlength="6" placeholder="6-digit OTP">
+        <button class="primary" type="submit">Verify & Continue <span>→</span></button>
+        <p class="message" id="otp-message" aria-live="polite"></p>
+      </form>
+
+      <div class="notice"><b>ⓘ</b><span>Access is based on your assigned role. Super Admin accounts are created privately and cannot be registered publicly.</span></div>
+      <div class="demo">● DEVELOPMENT PREVIEW — REAL OTP NOT CONFIGURED</div>
+      <div class="security">♢ &nbsp; Secure · Private · Role-Based Access</div>
+    </section>
+
+    <section class="bottom-features">
+      <div><b>▤</b><span>Online Admission</span></div><div><b>◷</b><span>Shift Management</span></div><div><b>▧</b><span>Digital Receipts</span></div><div><b>♧</b><span>Fee Reminders</span></div><div><b>▥</b><span>Reports & Analytics</span></div>
+    </section>
+  </main>
+  <footer>© 2026 SMART LIBRARY · LIBRARY MANAGEMENT PLATFORM</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
